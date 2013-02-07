@@ -2,6 +2,10 @@
 
 **WinHaste** is a Windows commandline client for [hastebin.com](http://hastebin.com). 
 
+## Download ##
+
+A binary is available [here](http://ajryan-github-downloads.s3.amazonaws.com/WinHaste.exe).
+
 ## Usage ##
 
     WinHaste.exe [service url] [file to haste]
