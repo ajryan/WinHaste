@@ -10,7 +10,7 @@ namespace WinHaste
 			Success,
 			BadUrl,
 			BadFilename,
-			BarArgs
+			BadArgs
 		}
 
 		private const string DEFAULT_URL = "http://hastebin.com";
@@ -45,7 +45,7 @@ Defaults:
 			}
 
 			if (_args.Length > 2)
-				return ParseResult.BarArgs;
+				return ParseResult.BadArgs;
 
 			if (_args.Length > 0)
 			{
