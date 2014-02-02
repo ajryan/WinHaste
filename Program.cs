@@ -6,27 +6,28 @@ using System.Windows.Forms;
 
 namespace WinHaste
 {
-    class Program
+    static class Program
     {
-        private static readonly Regex _HasteKeyRegex = new Regex(@"{""key"":""(?<key>[a-z].*)""}", RegexOptions.Compiled);
+        internal static readonly Regex _HasteKeyRegex = new Regex(@"{""key"":""(?<key>[a-z].*)""}", RegexOptions.Compiled);
 
         [STAThread]
         static void Main(string[] args)
         {
             var parameters = new Parameters(args);
             var parseResult = parameters.Parse();
+
             if (parseResult != Parameters.ParseResult.Success)
             {
                 Console.WriteLine(parameters.Usage);
                 Console.WriteLine(Environment.NewLine + "ERROR: " + parseResult);
+
                 return;
             }
 
             string haste;
+
             if (!String.IsNullOrEmpty(parameters.Filename))
-            {
                 haste = File.ReadAllText(parameters.Filename);
-            }
             else
             {
                 bool piped = IsInputPiped();
@@ -34,9 +35,10 @@ namespace WinHaste
                 haste = String.Empty;
 
                 int consoleKey = Console.Read();
+
                 while (consoleKey != -1)
                 {
-                    var consoleChar = Convert.ToChar(consoleKey);
+                    var consoleChar = (char)consoleKey;
 
                     if (piped)
                     {
@@ -68,11 +70,12 @@ namespace WinHaste
             }
         }
 
-        private static bool IsInputPiped()
+        static bool IsInputPiped()
         {
             try
             {
                 var tmp = Console.KeyAvailable;
+
                 return false;
             }
             catch (InvalidOperationException)
