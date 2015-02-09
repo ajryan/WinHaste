@@ -61,7 +61,7 @@ namespace WinHaste
                     return;
                 }
 
-                string hasteUrl = "http://hastebin.com/" + match.Groups["key"];
+                string hasteUrl = String.Concat(parameters.Url, "/", match.Groups["key"]);
 
                 Clipboard.SetText(hasteUrl);
                 Console.WriteLine("\r\nHaste URL: {0}  (copied to clipboard)", hasteUrl);

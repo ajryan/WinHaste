@@ -17,10 +17,10 @@ namespace WinHaste
 
 		private const string USAGE =
 @"Usage: WinHaste.exe [service url] [file to haste]
-				
+
 Defaults:
 			[service url] = http://hastebin.com
-				
+
 			When [file to haste] is omitted, haste.exe reads from
 			standard input until an end-of-file character (^Z) is
 			encountered.";
