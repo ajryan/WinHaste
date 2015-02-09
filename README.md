@@ -4,7 +4,7 @@
 
 ## Download ##
 
-A binary is available [here](http://ajryan-github-downloads.s3.amazonaws.com/WinHaste.exe).
+Binary releases are available [here](https://github.com/ajryan/WinHaste/releases).
 
 ## Usage ##
 
