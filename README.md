@@ -1,6 +1,6 @@
 # WinHaste #
 
-**WinHaste** is a Windows commandline client for [hastebin.com](http://hastebin.com). 
+**WinHaste** is a Windows commandline client for [hastebin.com](https://hastebin.com).
 
 ## Download ##
 
@@ -10,9 +10,9 @@ Binary releases are available [here](https://github.com/ajryan/WinHaste/releases
 
     WinHaste.exe [service url] [file to haste]
 
-Both parameters are optional. 
+Both parameters are optional.
 
-The `[service url]` parameter defaults to `http://hastebin.com` 
+The `[service url]` parameter defaults to `https://hastebin.com`
 
 When the `[file to haste]` parameter is omitted, WinHaste reads from the console standard input stream.
 
@@ -23,4 +23,4 @@ The hastebin URL of your snippet is copied to the clipboard upon success.
 
 ## HasteBin ##
 
-[hastebin.com](http://hastebin.com) was created by John Crepezzi. See the [about.md](http://hastebin.com/about.md) and [GitHub repo](https://github.com/seejohnrun/haste-server) for more.
+[hastebin.com](https://hastebin.com) was created by John Crepezzi. See the [about.md](https://hastebin.com/about.md) and [GitHub repo](https://github.com/seejohnrun/haste-server) for more.

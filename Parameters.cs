@@ -13,13 +13,13 @@ namespace WinHaste
 			BadArgs
 		}
 
-		private const string DEFAULT_URL = "http://hastebin.com";
+		private const string DEFAULT_URL = "https://hastebin.com";
 
 		private const string USAGE =
 @"Usage: WinHaste.exe [service url] [file to haste]
 
 Defaults:
-			[service url] = http://hastebin.com
+			[service url] = https://hastebin.com
 
 			When [file to haste] is omitted, haste.exe reads from
 			standard input until an end-of-file character (^Z) is
