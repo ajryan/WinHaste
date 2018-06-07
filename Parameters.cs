@@ -37,23 +37,13 @@ Defaults:
 
     public ParseResult Parse()
     {
-      if (_args.Length == 0)
-      {
-        return ParseResult.Success;
-      }
-
-      if (_args.Length > 2)
-        return ParseResult.BadArgs;
-
       bool pathProvided = false;
 
-      if (_args.Length > 1)
+      if (_args.Length == 0)
       {
-        Url = ParseUrl(_args[0]);
-        FilePath = _args[1];
-        pathProvided = true;
+        Url = DEFAULT_URL;
       }
-      else
+      else if (_args.Length == 1)
       {
         Url = ParseUrl(_args[0]);
 
@@ -63,6 +53,16 @@ Defaults:
           FilePath = _args[0];
           pathProvided = true;
         }
+      }
+      else if (_args.Length == 2)
+      {
+        Url = ParseUrl(_args[0]);
+        FilePath = _args[1];
+        pathProvided = true;
+      }
+      else
+      {
+        return ParseResult.BadArgs;
       }
 
       return Url == null ? ParseResult.BadUrl

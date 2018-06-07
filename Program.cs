@@ -41,8 +41,10 @@ namespace WinHaste
         }
 
         string hasteUrl = String.Concat(parameters.Url, "/", match.Groups["key"]);
-        Clipboard.Copy(hasteUrl);
-        Console.WriteLine($"Haste URL: {hasteUrl}  (copied to clipboard){Environment.NewLine}", hasteUrl);
+
+        string copyMessage = Clipboard.Copy(hasteUrl) ? " (copied to clipboard)" : string.Empty;
+
+        Console.WriteLine($"Haste URL: {hasteUrl}{copyMessage}{Environment.NewLine}", hasteUrl);
       }
     }
 
