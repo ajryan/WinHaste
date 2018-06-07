@@ -1,20 +1,25 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinHaste", "WinHaste.csproj", "{788C1C6D-D81C-4A43-9E62-22021C7D72BA}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinHaste", "WinHaste.csproj", "{57DD5F62-7AE4-48A5-8355-3490F46C5799}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{788C1C6D-D81C-4A43-9E62-22021C7D72BA}.Debug|x86.ActiveCfg = Debug|x86
-		{788C1C6D-D81C-4A43-9E62-22021C7D72BA}.Debug|x86.Build.0 = Debug|x86
-		{788C1C6D-D81C-4A43-9E62-22021C7D72BA}.Release|x86.ActiveCfg = Release|x86
-		{788C1C6D-D81C-4A43-9E62-22021C7D72BA}.Release|x86.Build.0 = Release|x86
+		{57DD5F62-7AE4-48A5-8355-3490F46C5799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57DD5F62-7AE4-48A5-8355-3490F46C5799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57DD5F62-7AE4-48A5-8355-3490F46C5799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57DD5F62-7AE4-48A5-8355-3490F46C5799}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6ABC001B-FA59-465F-82FD-07E1AB64DE54}
 	EndGlobalSection
 EndGlobal
