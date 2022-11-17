@@ -13,7 +13,7 @@ namespace WinHaste
       BadArgs
     }
 
-    private const string DEFAULT_URL = "https://hastebin.com";
+    private string DEFAULT_URL;
 
     private const string USAGE =
 @"Usage: WinHaste.exe [service url] [file to haste]
@@ -26,9 +26,10 @@ Defaults:
 
     private readonly string[] _args;
 
-    public Parameters(string[] args)
+    public Parameters(string[] args, string url)
     {
       _args = args;
+      DEFAULT_URL = url;
     }
 
     public string Usage => USAGE;

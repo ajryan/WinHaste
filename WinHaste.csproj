@@ -6,4 +6,7 @@
     <LangVersion>latest</LangVersion>
     <RuntimeIdentifiers>win7-x64;osx.10.12-x64;linux-x64</RuntimeIdentifiers>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2-beta3" />
+  </ItemGroup>
 </Project>

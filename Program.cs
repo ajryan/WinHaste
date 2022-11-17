@@ -14,7 +14,13 @@ namespace WinHaste
     [STAThread]
     static async Task Main(string[] args)
     {
-      var parameters = new Parameters(args);
+      if (!VariablesStorage.IsDirectoryExists())
+      {
+        VariablesStorage.InitConfigFile();
+      }
+
+      var url = VariablesStorage.GetConfig()["baseUrl"];
+      var parameters = new Parameters(args, url);
       var parseResult = parameters.Parse();
       if (parseResult != Parameters.ParseResult.Success)
       {
