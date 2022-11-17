@@ -6,7 +6,4 @@
     <LangVersion>latest</LangVersion>
     <RuntimeIdentifiers>win7-x64;osx.10.12-x64;linux-x64</RuntimeIdentifiers>
   </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Update="Microsoft.NETCore.App" Version="2.1.30" />
-  </ItemGroup>
 </Project>
